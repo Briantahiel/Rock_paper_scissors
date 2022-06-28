@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+h2{
+    cursor: pointer;
+    text-align: center;
+}
+.score-display{
+    display: block;
+    height: 150px;
+   
+}
+.rock{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+.scissors{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+.paper{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
