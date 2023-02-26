@@ -1,18 +1,18 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+.game-container{
+    position: relative;
+    width: 100%;
 }
 h2{
     cursor: pointer;
     text-align: center;
 }
 .score-display{
-    display: block;
     height: 150px;
-   
+    text-align: center; 
 }
 .rock{
     background-position: center center;
@@ -34,4 +34,22 @@ h2{
     background-size: cover;
     width: 100px;
     height: 100px;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    max-width: 480px;
+    margin: 80px auto;
+}
+@media screen and (max-width: 460px) {
+    .options img{
+        width: 80px;
+        height: 80px;
+    }
+    h1{
+        font-size: 1.8em;
+    }
+    h2{
+        font-size: 1.4em;
+    }
 }
