@@ -6,14 +6,30 @@ body{
     position: relative;
     width: 100%;
 }
-h2{
-    cursor: pointer;
-    text-align: center;
-}
 .score-display{
     height: 150px;
     text-align: center; 
 }
+img{
+    cursor: pointer;
+}
+img:hover{
+    animation: beat 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes beat {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
 .rock{
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,8 +64,5 @@ h2{
     }
     h1{
         font-size: 1.8em;
-    }
-    h2{
-        font-size: 1.4em;
     }
 }

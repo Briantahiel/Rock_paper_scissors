@@ -1,6 +1,6 @@
 const message = document.querySelector('.message');
 const score = document.querySelector('.score');
-const options = document.querySelectorAll('h2');
+const options = document.querySelectorAll('img');
 const winnerScores = [0,0];
 
 // It adds an evenlistener to every option
@@ -8,8 +8,9 @@ for ( let i = 0 ; i < options.length ; i++){
     options[i].addEventListener('click', play);
 }
 
-function play(e){
-    let player = e.target.innerText;
+function play(){
+    let player = this.alt;
+    console.log(player)
     //It selects a number between 0 and less than 1
     let computer = Math.random();
 
